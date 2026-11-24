@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>LUXURY COLLECTION — ODNOZNACHNO</title><link rel="stylesheet" href="/collection/collections.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"></head><body><main class="page"><div class="topline"><a class="brand" href="/index.html">ODNOZNACHNO</a><a class="back" href="/collection/catalog.html">← ВСЕ КОЛЛЕКЦИИ</a></div><p class="eyebrow">LUXURY / ODNOZNACHNO</p><h1 class="page-title">LUXURY COLLECTION</h1><p class="collection-intro">минимализм, выразительные детали и премиальная эстетика</p><div class="product-grid"><article class="product-item collection-product-card">
+<img src="/img/2026-11-19_11-06-47.png" alt="LUXURY №1" class="product-preview" onclick="openProductDetails(0)">
+<h2>LUXURY №1</h2>
+<p class="collection-product-price">1 500 ₽</p>
+<button class="details-button" type="button" onclick="openProductDetails(0)">ПОДРОБНЕЕ О ТОВАРЕ</button>
+</article><article class="product-item collection-product-card">
+<img src="/img/2026-11-19_11-06-47.png" alt="LUXURY №2" class="product-preview" onclick="openProductDetails(1)">
+<h2>LUXURY №2</h2>
+<p class="collection-product-price">1 500 ₽</p>
+<button class="details-button" type="button" onclick="openProductDetails(1)">ПОДРОБНЕЕ О ТОВАРЕ</button>
+</article><article class="product-item collection-product-card">
+<img src="/img/2026-11-19_11-06-47.png" alt="LUXURY №3" class="product-preview" onclick="openProductDetails(2)">
+<h2>LUXURY №3</h2>
+<p class="collection-product-price">1 500 ₽</p>
+<button class="details-button" type="button" onclick="openProductDetails(2)">ПОДРОБНЕЕ О ТОВАРЕ</button>
+</article><article class="product-item collection-product-card">
+<img src="/img/2026-11-19_11-06-47.png" alt="LUXURY №4" class="product-preview" onclick="openProductDetails(3)">
+<h2>LUXURY №4</h2>
+<p class="collection-product-price">1 500 ₽</p>
+<button class="details-button" type="button" onclick="openProductDetails(3)">ПОДРОБНЕЕ О ТОВАРЕ</button>
+</article></div></main><script>window.collectionProducts = [{"name": "LUXURY №1", "price": 1500, "images": ["/img/luxury-product-01-1.png", "/img/luxury-product-01-2.png", "/img/luxury-product-01-3.png"], "description": "Футболка ODNOZNACHNO из коллекции LUXURY COLLECTION. NOT JUST CLOTHING. IT'S AN ATTITUDE.", "material": "95% хлопок, 5% лайкра", "fit": "Relaxed Fit", "color": "Чёрный"}, {"name": "LUXURY №2", "price": 1500, "images": ["/img/luxury-product-02-1.png", "/img/luxury-product-02-2.png", "/img/luxury-product-02-3.png"], "description": "Футболка ODNOZNACHNO из коллекции LUXURY COLLECTION. NOT JUST CLOTHING. IT'S AN ATTITUDE.", "material": "95% хлопок, 5% лайкра", "fit": "Relaxed Fit", "color": "Чёрный"}, {"name": "LUXURY №3", "price": 1500, "images": ["/img/luxury-product-03-1.png", "/img/luxury-product-03-2.png", "/img/luxury-product-03-3.png"], "description": "Футболка ODNOZNACHNO из коллекции LUXURY COLLECTION. NOT JUST CLOTHING. IT'S AN ATTITUDE.", "material": "95% хлопок, 5% лайкра", "fit": "Relaxed Fit", "color": "Чёрный"}, {"name": "LUXURY №4", "price": 1500, "images": ["/img/luxury-product-04-1.png", "/img/luxury-product-04-2.png", "/img/luxury-product-04-3.png"], "description": "Футболка ODNOZNACHNO из коллекции LUXURY COLLECTION. NOT JUST CLOTHING. IT'S AN ATTITUDE.", "material": "95% хлопок, 5% лайкра", "fit": "Relaxed Fit", "color": "Чёрный"}];</script>
+
+<!-- PRODUCT DETAILS MODAL -->
+<div class="product-details-modal" id="productDetailsModal">
+  <div class="product-details-content">
+    <button class="product-details-close" type="button" onclick="closeProductDetails()">×</button>
+    <div class="details-gallery">
+      <div class="details-main-photo">
+        <button class="details-photo-arrow prev" type="button" onclick="changeProductPhoto(-1)" aria-label="Предыдущее фото">‹</button>
+        <img id="detailsMainImage" src="/img/2026-11-19_11-06-47.png" alt="Фото товара">
+        <button class="details-photo-arrow next" type="button" onclick="changeProductPhoto(1)" aria-label="Следующее фото">›</button>
+      </div>
+      <div class="details-thumbnails" id="detailsThumbnails"></div>
+    </div>
+    <div class="details-info">
+      <p class="details-eyebrow">ODNOZNACHNO / COLLECTION</p>
+      <h2 id="detailsProductName">Футболка</h2>
+      <p class="details-price" id="detailsProductPrice">1 500 ₽</p>
+      <div class="details-description">
+        <h3>О ТОВАРЕ</h3>
+        <p id="detailsProductDescription">Футболка ODNOZNACHNO.</p>
+      </div>
+      <div class="details-specs">
+        <p>МАТЕРИАЛ <span id="detailsProductMaterial">95% хлопок, 5% лайкра</span></p>
+        <p>ПОСАДКА <span id="detailsProductFit">Relaxed Fit</span></p>
+        <p>ЦВЕТ <span id="detailsProductColor">Чёрный</span></p>
+      </div>
+      <button class="details-buy-button" id="detailsBuyButton" type="button">ВЫБРАТЬ РАЗМЕР</button>
+      <p class="details-note">Выбор размера и добавление в корзину — на следующем шаге</p>
+    </div>
+  </div>
+</div>
+
+<button class="floating-cart" onclick="openCart()">
+  <span>КОРЗИНА</span><span class="cart-counter" id="cartCount">0</span><span id="floatingCartTotal">0 ₽</span>
+</button>
+
+<div class="order-modal" id="orderModal">
+  <div class="order-content">
+    <button class="close-modal" onclick="closeOrder()">×</button>
+    <h2>ВЫБОР РАЗМЕРА</h2>
+    <p id="orderProduct"></p><p id="orderPrice"></p>
+    <h3>Размер</h3>
+    <div class="sizes">
+      <button onclick="selectSize(this)">M</button>
+      <button onclick="selectSize(this)">L</button>
+      <button onclick="selectSize(this)">XL</button>
+      <button onclick="selectSize(this)">XXL</button>
+    </div>
+    <p id="sizeError">Сначала выберите размер</p>
+    <button class="confirm-order" onclick="addToCart()">ДОБАВИТЬ В КОРЗИНУ</button>
+  </div>
+</div>
+
+<div class="cart-modal" id="cartModal">
+  <div class="cart-content">
+    <button class="close-modal" onclick="closeCart()">×</button>
+    <h2>ВАША КОРЗИНА</h2>
+    <div id="cartItems"></div>
+    <div class="cart-total"><span>ИТОГО:</span><span id="cartTotal">0 ₽</span></div>
+    <button class="checkout-button" onclick="checkout()">ОФОРМИТЬ ЗАКАЗ</button>
+    <button class="continue-button" onclick="closeCart()">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+  </div>
+</div>
+
+<div class="toast-notification" id="toastNotification">
+  <div class="toast-icon"></div>
+  <div class="toast-text"><strong></strong><span id="toastMessage"></span></div>
+</div>
+
+<script src="/java.js"></script>
+</body></html>

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b0b;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.future-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 55px 6%;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.collection-item {
+    width: 100%;
+    overflow: hidden;
+}
+
+.collection-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.collection-item:hover img {
+    transform: scale(1.03);
+}
+
+.collection-item h2 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 17px;
+    text-transform: uppercase;
+}
+
+/* Телефон */
+
+@media (max-width: 600px) {
+
+    .future-page {
+        padding: 25px 15px;
+    }
+
+    .collection-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 12px;
+    }
+
+    .collection-item h2 {
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-top: 12px;
+    }
+}

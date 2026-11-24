@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODNOZNACHNO</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site-loader" id="siteLoader">
+    <div class="loader-content">
+        <h1>ODNOZNACHNO</h1>
+        <div class="loader-line"></div>
+        <p>MADE IN MOSCOW</p>
+    </div>
+</div>
+ <!DOCTYPE html>
+<html lang="ru">
+
+    
+
+    <div class="logo">
+        <h1>ODNOZNACHNO</h1>
+    </div>
+
+    <header class="header">
+        <nav class="text-header">
+            <a href="#">Главная</a>
+            <a href="/catalog.html">Каталог</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+    <div class="brand-marquee">
+    <div class="marquee-track">
+        <span>ODNOZNACHNO · MADE IN MOSCOW · STREET CULTURE · NOT JUST CLOTHING · </span>
+        <span>ODNOZNACHNO · MADE IN MOSCOW · STREET CULTURE · NOT JUST CLOTHING · </span>
+        <span>ODNOZNACHNO · MADE IN MOSCOW · STREET CULTURE · NOT JUST CLOTHING · </span>
+        <span>ODNOZNACHNO · MADE IN MOSCOW · STREET CULTURE · NOT JUST CLOTHING · </span>
+    </div>
+</div>
+    <section class="new-drop" id="new-drop">
+
+    <div class="new-drop-content">
+        <p class="drop-label">ODNOZNACHNO PRESENTS</p>
+
+        <h1>NEW DROP</h1>
+
+        <p class="drop-description">
+            NOT JUST CLOTHING. IT'S AN ATTITUDE.
+        </p>
+
+        <a href="/catalog.html" class="drop-button">
+            EXPLORE COLLECTION
+        </a>
+
+    </div>
+
+    <div class="drop-number">
+        COLLECTION №001 / MOSCOW
+    </div>
+
+ 
+</section>
+<!-- Кнопка открытия меню -->
+<button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<!-- Затемнение фона -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- Боковое меню -->
+<nav class="side-menu" id="sideMenu">
+
+    <div class="menu-header">
+        <h2>ODNOZNACHNO</h2>
+        <button class="menu-close" id="menuClose">×</button>
+    </div>
+
+    <p class="menu-caption">COLLECTIONS</p>
+
+    <a href="#new-drop" class="menu-link">NEW DROP <span>01</span></a>
+    <a href="/catalog.html" class="menu-link">CATALOG <span>02</span></a>
+    <a href="#bestsellers" class="menu-link">BESTSELLERS (soon) <span>03</span></a>
+    <a href="#limited" class="menu-link">LIMITED EDITION (soon) <span>04</span></a>
+    
+
+    <div class="menu-divider"></div>
+
+    <p class="menu-caption">INFORMATION</p>
+
+    <a href="#lookbook" class="menu-link">LOOKBOOK <span>06</span></a>
+    <a href="#about" class="menu-link">ABOUT US <span>07</span></a>
+    <a href="#contacts" class="menu-link">CONTACTS <span>08</span></a>
+
+    <div class="menu-footer">
+        MOSCOW · EST. 2025
+    </div>
+
+</nav>
+    <main>
+        <section class="catalog" id="catalog">
+            
+
+            <article class="product-card">
+                <img src="/img/2026-11-19_11-06-47.png" alt="Футболка ODNOZNACHNO" onclick="openProductDetails(0)" class="product-preview">
+                <h2 onclick="openProductDetails(0)" class="product-card-title">Футболка №1</h2>
+                <p class="price">1 500 ₽</p>
+                <button class="details-button" type="button" onclick="openProductDetails(0)">ПОДРОБНЕЕ О ТОВАРЕ</button>
+            </article>
+
+            <article class="product-card">
+                <img src="/img/2026-11-19_11-06-47.png" alt="Футболка ODNOZNACHNO" onclick="openProductDetails(1)" class="product-preview">
+                <h2 onclick="openProductDetails(1)" class="product-card-title">Футболка №2</h2>
+                <p class="price">1 500 ₽</p>
+                <button class="details-button" type="button" onclick="openProductDetails(1)">ПОДРОБНЕЕ О ТОВАРЕ</button>
+            </article>
+
+            <article class="product-card">
+                <img src="/img/2026-11-19_11-06-47.png" alt="Футболка ODNOZNACHNO" onclick="openProductDetails(2)" class="product-preview">
+                <h2 onclick="openProductDetails(2)" class="product-card-title">Футболка №3</h2>
+                <p class="price">1 500 ₽</p>
+                <button class="details-button" type="button" onclick="openProductDetails(2)">ПОДРОБНЕЕ О ТОВАРЕ</button>
+            </article>
+
+            <article class="product-card">
+                <img src="/img/2026-11-19_11-06-47.png" alt="Футболка ODNOZNACHNO" onclick="openProductDetails(3)" class="product-preview">
+                <h2 onclick="openProductDetails(3)" class="product-card-title">Футболка №4</h2>
+                <p class="price">1 500 ₽</p>
+                <button class="details-button" type="button" onclick="openProductDetails(3)">ПОДРОБНЕЕ О ТОВАРЕ</button>
+            </article>
+
+            <article class="product-card">
+                <img src="/img/2026-11-19_11-06-47.png" alt="Футболка ODNOZNACHNO" onclick="openProductDetails(4)" class="product-preview">
+                <h2 onclick="openProductDetails(4)" class="product-card-title">Футболка №5</h2>
+                <p class="price">1 500 ₽</p>
+                <button class="details-button" type="button" onclick="openProductDetails(4)">ПОДРОБНЕЕ О ТОВАРЕ</button>
+            </article>
+
+            <article class="product-card">
+                <img src="/img/2026-11-19_11-06-47.png" alt="Футболка ODNOZNACHNO" onclick="openProductDetails(5)" class="product-preview">
+                <h2 onclick="openProductDetails(5)" class="product-card-title">Футболка №6</h2>
+                <p class="price">1 500 ₽</p>
+                <button class="details-button" type="button" onclick="openProductDetails(5)">ПОДРОБНЕЕ О ТОВАРЕ</button>
+            </article>
+
+            <article class="product-card">
+                <img src="/img/2026-11-19_11-06-47.png" alt="Футболка ODNOZNACHNO" onclick="openProductDetails(6)" class="product-preview">
+                <h2 onclick="openProductDetails(6)" class="product-card-title">Футболка №7</h2>
+                <p class="price">1 500 ₽</p>
+                <button class="details-button" type="button" onclick="openProductDetails(6)">ПОДРОБНЕЕ О ТОВАРЕ</button>
+            </article>
+
+            <article class="product-card">
+                <img src="/img/2026-11-19_11-06-47.png" alt="Футболка ODNOZNACHNO" onclick="openProductDetails(7)" class="product-preview">
+                <h2 onclick="openProductDetails(7)" class="product-card-title">Футболка №8</h2>
+                <p class="price">1 500 ₽</p>
+                <button class="details-button" type="button" onclick="openProductDetails(7)">ПОДРОБНЕЕ О ТОВАРЕ</button>
+            </article>
+
+        </section>
+    </main>
+
+
+<!-- МОДАЛЬНОЕ ОКНО С ИНФОРМАЦИЕЙ О ТОВАРЕ -->
+<div class="product-details-modal" id="productDetailsModal">
+    <div class="product-details-content">
+        <button class="product-details-close" type="button" onclick="closeProductDetails()">×</button>
+
+        <div class="details-gallery">
+            <div class="details-main-photo">
+                <button class="details-photo-arrow prev" type="button" onclick="changeProductPhoto(-1)" aria-label="Предыдущее фото">‹</button>
+                <img id="detailsMainImage" src="/img/2026-11-19_11-06-47.png" alt="Фото товара">
+                <button class="details-photo-arrow next" type="button" onclick="changeProductPhoto(1)" aria-label="Следующее фото">›</button>
+            </div>
+            <div class="details-thumbnails" id="detailsThumbnails"></div>
+        </div>
+
+        <div class="details-info">
+            <p class="details-eyebrow">ODNOZNACHNO / COLLECTION 001</p>
+            <h2 id="detailsProductName">Футболка №1</h2>
+            <p class="details-price" id="detailsProductPrice">1 500 ₽</p>
+
+            <div class="details-description">
+                <h3>О ТОВАРЕ</h3>
+                <p id="detailsProductDescription">Фирменная футболка ODNOZNACHNO.</p>
+            </div>
+
+            <div class="details-specs">
+                <p>МАТЕРИАЛ <span id="detailsProductMaterial">95% хлопок, 5% лайкра</span></p>
+                <p>ПОСАДКА <span id="detailsProductFit">Relaxed Fit</span></p>
+                <p>ЦВЕТ <span id="detailsProductColor">Чёрный</span></p>
+            </div>
+
+            <button class="details-buy-button" id="detailsBuyButton" type="button">ВЫБРАТЬ РАЗМЕР</button>
+            <p class="details-note">Выбор размера и добавление в корзину — на следующем шаге</p>
+        </div>
+    </div>
+</div>
+
+<!-- КНОПКА КОРЗИНЫ В ШАПКЕ -->
+<!-- ПЛАВАЮЩАЯ КОРЗИНА -->
+
+<button class="floating-cart" onclick="openCart()">
+    <span>КОРЗИНА</span>
+    <span class="cart-counter" id="cartCount">0</span>
+    <span id="floatingCartTotal">0 ₽</span>
+</button>
+
+<!-- ОКНО ВЫБОРА ТОВАРА -->
+<div class="order-modal" id="orderModal">
+    <div class="order-content">
+
+        <button class="close-modal" onclick="closeOrder()">×</button>
+
+        <h2>ВЫБОР РАЗМЕРА</h2>
+
+        <p id="orderProduct"></p>
+        <p id="orderPrice"></p>
+
+        <h3>Размер</h3>
+
+        <div class="sizes">
+            <button onclick="selectSize(this)">M</button>
+            <button onclick="selectSize(this)">L</button>
+            <button onclick="selectSize(this)">XL</button>
+            <button onclick="selectSize(this)">XXL</button>
+        </div>
+
+        <p id="sizeError">Сначала выберите размер</p>
+
+        <button class="confirm-order" onclick="addToCart()">
+            ДОБАВИТЬ В КОРЗИНУ
+        </button>
+
+    </div>
+</div>
+
+<!-- ОКНО КОРЗИНЫ -->
+<div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+
+        <button class="close-modal" onclick="closeCart()">×</button>
+
+        <h2>ВАША КОРЗИНА</h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+            <span>ИТОГО:</span>
+            <span id="cartTotal">0 ₽</span>
+        </div>
+
+        <button class="checkout-button" onclick="checkout()">
+            ОФОРМИТЬ ЗАКАЗ
+        </button>
+
+        <button class="continue-button" onclick="closeCart()">
+            ПРОДОЛЖИТЬ ПОКУПКИ
+        </button>
+
+    </div>
+
+
+</div>
+
+
+
+<div class="toast-notification" id="toastNotification">
+    <div class="toast-icon">✓</div>
+    <div class="toast-text">
+        <strong>ODNOZNACHNO</strong>
+        <span id="toastMessage">Товар добавлен в корзину</span>
+    </div>
+</div>
+
+<footer class="site-footer" id="contacts">
+
+    <div class="footer-main">
+
+        <!-- LOGO -->
+        <div class="footer-brand">
+
+            <img
+                src="img/logo-1.png"
+                alt="ODNOZNACHNO Logo"
+                class="footer-logo"
+            >
+
+            <p>NOT JUST CLOTHING.<br>IT'S AN ATTITUDE.</p>
+
+            <span class="footer-location">
+                MADE IN MOSCOW
+            </span>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <div class="footer-column">
+
+            <h3>NAVIGATION</h3>
+
+            <a href="#new-drop">NEW DROP</a>
+            <a href="#catalog">CATALOG</a>
+            <a href="#bestsellers">BESTSELLERS</a>
+            <a href="#lookbook">LOOKBOOK</a>
+
+        </div>
+
+
+        <!-- INFORMATION -->
+        <div class="footer-column">
+
+            <h3>INFORMATION</h3>
+
+            <a href="#delivery">DELIVERY</a>
+            <a href="#payment">PAYMENT</a>
+            <a href="#size-guide">SIZE GUIDE</a>
+            <a href="#about">ABOUT US</a>
+
+        </div>
+
+
+        <!-- CONTACTS -->
+        <div class="footer-column">
+
+            <h3>CONTACTS</h3>
+
+            <a href="https://t.me/YOUR_USERNAME"
+               target="_blank">
+                TELEGRAM ↗
+            </a>
+
+            <a href="https://instagram.com/YOUR_USERNAME"
+               target="_blank">
+                INSTAGRAM ↗
+            </a>
+
+            <a href="https://tiktok.com/@YOUR_USERNAME"
+               target="_blank">
+                TIKTOK ↗
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+
+        <span>© 2026 ODNOZNACHNO</span>
+
+        <span>MOSCOW, RUSSIA</span>
+
+        <span>ALL RIGHTS RESERVED</span>
+
+    </div>
+
+</footer>
+  <script src="/java.js"></script>
+
+
+
+</body>
+</html>
